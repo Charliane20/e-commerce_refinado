@@ -1,0 +1,65 @@
+Sistema de Controle de Ordens de Serviço - Oficina Mecânica
+
+Este projeto é um sistema de controle e gerenciamento de execução de ordens de serviço para uma oficina mecânica. Ele foi projetado para gerenciar clientes, veículos, ordens de serviço, peças, serviços e equipes de mecânicos de forma eficiente.
+
+📋 Funcionalidades
+
+Cadastro de clientes e seus respectivos veículos.
+
+Gerenciamento de ordens de serviço (OS):
+
+Inclusão de serviços e peças.
+
+Cálculo automático do valor total da OS.
+
+
+Controle de equipes de mecânicos e suas especialidades.
+
+Consulta a tabelas de referência de mão de obra e preços de peças.
+
+Atualização do status da OS (ex.: "pendente", "em andamento", "concluída").
+
+Emissão de relatórios detalhados de OS.
+
+
+📂 Estrutura do Banco de Dados
+
+O banco de dados segue o modelo relacional e está estruturado nas seguintes tabelas principais:
+
+1. Cliente: Armazena informações dos clientes.
+
+
+2. Veículo: Relacionado ao cliente, armazena informações dos veículos.
+
+
+3. Ordem de Serviço (OS): Gerencia dados das ordens de serviço.
+
+
+4. Serviço: Catálogo de serviços disponíveis.
+
+
+5. Peça: Estoque de peças disponíveis.
+
+
+6. Equipe: Registro das equipes de mecânicos.
+
+
+7. Mecânico: Cadastro de mecânicos vinculados às equipes.
+
+
+8. Execução de Serviços: Relaciona OS com serviços realizados.
+
+
+9. Uso de Peças: Relaciona OS com peças utilizadas.
+
+
+
+🔗 Relacionamentos entre Tabelas
+
+Um cliente pode ter vários veículos (1:N).
+
+Um veículo pode ter várias ordens de serviço (1:N).
+
+Uma ordem de serviço pode incluir vários serviços e peças (N:M).
+
+Cada equipe pode ser composta por vários mecânicos (1:N).
